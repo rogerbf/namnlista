@@ -1,0 +1,7 @@
+node_modules
+dist
+.DS_Store
+package
+namnlista*.tgz
+npm-debug.log
+anteckningar.text
