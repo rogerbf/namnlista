@@ -19,8 +19,8 @@ module.exports = () => new Promise((resolve, reject) => {
               return Object.assign(
                 {},
                 acc,
-                { alternative: [
-                    ...acc.alternative,
+                { alternate: [
+                    ...acc.alternate,
                     name.slice(0, -1)
                   ]
                 }
@@ -37,7 +37,7 @@ module.exports = () => new Promise((resolve, reject) => {
               )
             }
           } else { return acc }
-        }, { main: [], alternative: [] })
+        }, { main: [], alternate: [] })
     )
   })
 })

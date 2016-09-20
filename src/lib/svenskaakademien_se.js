@@ -4,7 +4,7 @@ const url = `http://www.svenskaakademien.se/`
 
 const scrape = xray(url, `.view-name-day`, {
   main: xray(`.name_day__main-name`, [`.name_day__name | trim`]),
-  alternative: xray(`.name_day__not-main-name`, [`.name_day__name | trim`])
+  alternate: xray(`.name_day__not-main-name`, [`.name_day__name | trim`])
 })
 
 module.exports = () =>

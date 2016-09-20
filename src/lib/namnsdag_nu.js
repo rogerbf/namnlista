@@ -4,7 +4,7 @@ const url = `http://www.namnsdag.nu/`
 
 const scrape = xray(url, {
   main: xray(`.main-names span`),
-  alternative: xray(`.additional-names-row dd`)
+  alternate: xray(`.additional-names-row dd`)
 })
 
 const splitFilterTrim = name =>
@@ -15,7 +15,7 @@ module.exports = () => new Promise((resolve, reject) => {
     if (err) reject(err)
     resolve({
       main: splitFilterTrim(names.main),
-      alternative: splitFilterTrim(names.alternative)
+      alternate: splitFilterTrim(names.alternate)
     })
   })
 })
