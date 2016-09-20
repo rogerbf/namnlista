@@ -34,5 +34,15 @@
       "es2015"
     ]
   },
-  "dependencies": {}
+  "dependencies": {
+    "x-ray": "2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogerbf/namnlista.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rogerbf/namnlista/issues"
+  },
+  "homepage": "https://github.com/rogerbf/namnlista#readme"
 }
