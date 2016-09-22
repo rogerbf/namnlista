@@ -1,7 +1,7 @@
 {
   "name": "namnlista",
   "version": "0.0.1",
-  "description": "",
+  "description": "svenska namnsdagar",
   "main": "./dist/index.js",
   "scripts": {
     "test": "echo 'tests not available'",
@@ -9,7 +9,7 @@
     "build": "babel --ignore *.test.js --out-dir dist src",
     "prepublish": "npm run build"
   },
-  "keywords": [],
+  "keywords": ["name-day", "namnsdag", "namnsdagar"],
   "author": "rogerbf <roger@bergfalk.nu> (http://bergfalk.nu/)",
   "license": "MIT",
   "devDependencies": {
@@ -35,6 +35,7 @@
     ]
   },
   "dependencies": {
+    "akademien": "0.0.1",
     "x-ray": "2.3.0"
   },
   "repository": {

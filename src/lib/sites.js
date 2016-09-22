@@ -1,5 +1,5 @@
 module.exports = {
-  svenskaakademien_se: require(`./svenskaakademien_se.js`),
+  svenskaakademien_se: require(`akademien`).nameday.today,
   alltforforaldrar_se: require(`./alltforforaldrar_se.js`),
   dagensnamn_nu: require(`./dagensnamn_nu.js`),
   dagensnamnsdag_nu: require(`./dagensnamnsdag_nu.js`),
