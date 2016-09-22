@@ -4,8 +4,7 @@
   "description": "svenska namnsdagar",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "echo 'tests not available'",
-    "prebuild": "npm test && rimraf dist",
+    "prebuild": "rimraf dist",
     "build": "babel --ignore *.test.js --out-dir dist src",
     "prepublish": "npm run build"
   },
