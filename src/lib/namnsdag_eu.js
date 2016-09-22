@@ -9,6 +9,6 @@ const scrape = xray(url, {
 module.exports = () => new Promise((resolve, reject) => {
   scrape((err, names) => {
     if (err) reject(err)
-    resolve(names)
+    resolve(Object.assign({}, { site: `namnsdag_eu` }, names))
   })
 })

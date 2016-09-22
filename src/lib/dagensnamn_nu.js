@@ -8,6 +8,6 @@ module.exports = () =>
   new Promise((resolve, reject) => {
     scrape((err, names) => {
       if (err) reject(err)
-      resolve({ main: names.split(`, `) })
+      resolve({ site: `dagensnamn_nu` ,main: names.split(`, `) })
     })
   })

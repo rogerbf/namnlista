@@ -37,7 +37,7 @@ module.exports = () => new Promise((resolve, reject) => {
               )
             }
           } else { return acc }
-        }, { main: [], alternate: [] })
+        }, { site: `dagensnamnsdag_nu`,main: [], alternate: [] })
     )
   })
 })

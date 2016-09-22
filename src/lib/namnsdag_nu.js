@@ -14,6 +14,7 @@ module.exports = () => new Promise((resolve, reject) => {
   scrape((err, names) => {
     if (err) reject(err)
     resolve({
+      site: `namnsdag_nu`,
       main: splitFilterTrim(names.main),
       alternate: splitFilterTrim(names.alternate)
     })
