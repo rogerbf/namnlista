@@ -1,6 +1,6 @@
 {
   "name": "namnlista",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "svenska namnsdagar",
   "main": "./dist/index.js",
   "scripts": {
@@ -8,7 +8,13 @@
     "build": "babel --ignore *.test.js --out-dir dist src",
     "prepublish": "npm run build"
   },
-  "keywords": ["name-day", "namnsdag", "namnsdagar"],
+  "keywords": [
+    "name-day",
+    "namnsdag",
+    "namnsdagar",
+    "dagens",
+    "namn"
+  ],
   "author": "rogerbf <roger@bergfalk.nu> (http://bergfalk.nu/)",
   "license": "MIT",
   "devDependencies": {
@@ -44,5 +50,8 @@
   "bugs": {
     "url": "https://github.com/rogerbf/namnlista/issues"
   },
-  "homepage": "https://github.com/rogerbf/namnlista#readme"
+  "homepage": "https://github.com/rogerbf/namnlista#readme",
+  "bin": {
+    "namnlista": "./dist/bin/cli.js"
+  }
 }
