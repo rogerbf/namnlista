@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const nameday = require('../index.js')
-const cache = require('./nameCache.js')
+const cache = require('./cache.js')
 
 cache.get()
   .then(
@@ -10,10 +10,9 @@ cache.get()
   )
   .then(names => cache.set(names))
   .then(names => {
-    process.stdout.write(`Todays names: ${names.main.join(`, `)}`)
+    process.stdout.write(`Dagens namn: ${names.main.join(`, `)}\n`)
     if (names.hasOwnProperty(`alternate`)) {
-      process.stdout.write(` alternate: ${names.alternate.join(`, `)}`)
+      process.stdout.write(`Alternativt: ${names.alternate.join(`, `)}\n`)
     }
-    process.stdout.write(`\n`)
   })
-  .catch(err => process.stdout.write(`Todays names: Could not get names, error: ${err}\n`))
+  .catch(err => process.stdout.write(`Kunde inte hämta dagens namn\n`))
