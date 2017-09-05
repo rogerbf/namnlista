@@ -3,7 +3,9 @@
   "version": "2.0.0",
   "description": "swedish namedays",
   "main": "./build/namnlista.cjs.js",
-  "bin": "./bin/namnlista.js",
+  "bin": {
+    "namnlista": "./bin/namnlista.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
@@ -38,5 +40,13 @@
   "dependencies": {
     "akademien": "1.0.0",
     "commander": "2.11.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogerbf/namnlista.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rogerbf/namnlista/issues"
+  },
+  "homepage": "https://github.com/rogerbf/namnlista#readme"
 }
