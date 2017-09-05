@@ -1,57 +1,42 @@
 {
   "name": "namnlista",
-  "version": "1.1.0",
-  "description": "svenska namnsdagar",
-  "main": "./dist/index.js",
+  "version": "2.0.0",
+  "description": "swedish namedays",
+  "main": "./build/namnlista.cjs.js",
+  "bin": "./bin/namnlista.js",
   "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "babel --ignore *.test.js --out-dir dist src",
-    "prepublish": "npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "prepublish": "npm run lint && npm run format && nsp check && npm run build",
+    "lint": "eslint source",
+    "format": "prettier-standard \"source/**/*.js\""
   },
-  "keywords": [
-    "name-day",
-    "namnsdag",
-    "namnsdagar",
-    "dagens",
-    "namn"
-  ],
-  "author": "rogerbf <roger@bergfalk.nu> (http://bergfalk.nu/)",
+  "keywords": [],
+  "author": "rogerbf <roger@bergfa.lk> (http://bergfa.lk/)",
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "6.11.4",
-    "babel-preset-es2015": "6.13.2",
-    "rimraf": "2.5.4"
+    "babel-eslint": "7.2.3",
+    "babel-plugin-external-helpers": "6.22.0",
+    "babel-preset-env": "1.6.0",
+    "babel-preset-stage-3": "6.24.1",
+    "eslint-config-standard": "10.2.1",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-node": "5.1.1",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-standard": "3.0.1",
+    "nsp": "2.7.0",
+    "prettier-standard": "6.0.0",
+    "rollup": "0.49.2",
+    "rollup-plugin-babel": "2.7.1"
   },
+  "module": "./build/namnlista.esm.js",
   "files": [
-    "dist",
-    "README.md"
+    "build",
+    "README.md",
+    "bin"
   ],
-  "eslintConfig": {
-    "env": {
-      "node": true
-    },
-    "parserOptions": {
-      "ecmaVersion": 6
-    }
-  },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
-  },
   "dependencies": {
-    "akademien": "0.0.1",
-    "x-ray": "2.3.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rogerbf/namnlista.git"
-  },
-  "bugs": {
-    "url": "https://github.com/rogerbf/namnlista/issues"
-  },
-  "homepage": "https://github.com/rogerbf/namnlista#readme",
-  "bin": {
-    "namnlista": "./dist/bin/cli.js"
+    "akademien": "1.0.0",
+    "commander": "2.11.0"
   }
 }
