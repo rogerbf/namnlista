@@ -39,7 +39,8 @@
   ],
   "dependencies": {
     "akademien": "1.0.0",
-    "commander": "2.11.0"
+    "commander": "2.11.0",
+    "x-ray": "2.3.2"
   },
   "repository": {
     "type": "git",
