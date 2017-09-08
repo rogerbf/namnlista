@@ -20,13 +20,13 @@ export default () =>
               })
             } else {
               return Object.assign({}, acc, {
-                main: [ ...acc.main, name ]
+                included: [ ...acc.included, name ]
               })
             }
           } else {
             return acc
           }
-        }, { site: `dagensnamnsdag_nu`, main: [], alternate: [] })
+        }, { source: `dagensnamnsdag.nu`, included: [], alternate: [] })
       )
     })
   })

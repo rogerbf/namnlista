@@ -8,6 +8,6 @@ export default () =>
   new Promise((resolve, reject) => {
     scrape((err, names) => {
       if (err) reject(err)
-      resolve({ site: `dagensnamn_nu`, main: names.split(`, `) })
+      resolve({ source: `dagensnamn.nu`, included: names.split(`, `) })
     })
   })

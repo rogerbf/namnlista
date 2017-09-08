@@ -18,8 +18,8 @@ export default () =>
     scrape((err, names) => {
       if (err) reject(err)
       resolve({
-        site: `namnsdag_nu`,
-        main: splitFilterTrim(names.main),
+        source: `namnsdag.nu`,
+        included: splitFilterTrim(names.main),
         alternate: splitFilterTrim(names.alternate)
       })
     })
