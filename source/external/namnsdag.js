@@ -1,4 +1,4 @@
-import xray from "../xray"
+import xray from "./xray"
 
 const url = `http://www.namnsdag.eu/`
 
