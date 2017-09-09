@@ -1,7 +1,7 @@
 {
   "name": "namnlista",
   "version": "2.0.0",
-  "description": "swedish namedays",
+  "description": "swedish name days",
   "main": "./build/namnlista.cjs.js",
   "bin": {
     "namnlista": "./bin/namnlista.js"
