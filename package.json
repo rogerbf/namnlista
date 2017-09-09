@@ -13,7 +13,14 @@
     "lint": "eslint source",
     "format": "prettier-standard \"source/**/*.js\""
   },
-  "keywords": [],
+  "keywords": [
+    "name day",
+    "nameday",
+    "name-day",
+    "namnsdag",
+    "dagens namn",
+    "namnlängden"
+  ],
   "author": "rogerbf <roger@bergfa.lk> (http://bergfa.lk/)",
   "license": "MIT",
   "devDependencies": {
